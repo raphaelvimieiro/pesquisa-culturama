@@ -9,7 +9,7 @@
     </header>
     <section>
       <form action=" " method="get">
-       <fieldset> 
+        <fieldset>
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome</label>
           <input type="text" name="userName" required />
@@ -35,32 +35,51 @@
           <input type="file" accept="image/*" name="userImage" />
           <br />
         </fieldset>
- 
-       
-       
-       
-        <fieldset>
-          <legend>Hábitos </legend>
-          
-          
-          <p>Redes sociais</p>
-          <input type="checkbox" name="social" value="Instagram">
-          <label for="social">Instagram</label>
-          <br>
-          <input type="checkbox" name="social" value="Facebook">
-          <label for="social">Facebook</label>
-          <br>
-          <input type="checkbox" name="social" value="Linkedin">
-          <label for="social">Linkedin</label>
-          <br>
-          <input type="checkbox" name="social" value="X">
-          <label for="social">X</label>
-          
-        </fieldset>
 
-        <button type="submit">Enviar</button>
+        <fieldset>
+          <legend>Hábitos</legend>
+
+          <p>Redes sociais</p>
+          <input type="checkbox" name="social" value="Instagram" />
+          <label for="social">Instagram</label>
+          <br />
+          <input type="checkbox" name="social" value="Facebook" />
+          <label for="social">Facebook</label>
+          <br />
+          <input type="checkbox" name="social" value="Linkedin" />
+          <label for="social">Linkedin</label>
+          <br />
+          <input type="checkbox" name="social" value="X" />
+          <label for="social">X</label>
+        </fieldset>
       </form>
     </section>
   </head>
-  <body></body>
+ <fieldset>
+<legend>Opinião</legend>
+ <p>O que você acha da qualidade do nosso serviço?</p>
+          <input type="radio" id="otimo" name="suaopiniao" value="otima" />
+           <label for="otimo">Ótima</label>
+          <br />
+          <input type="radio" id="boa" name= "suaopiniao" value="boa" />
+          <label for="boa">Boa</label>
+          <br />
+          <input type="radio" id="regular" name="suaopiniao" value="regular" />
+          <label for="regular">Regular</label>
+          <br />
+          <input type="radio" id="ruim" name="suaopiniao" value="ruim" />
+          <label for="ruim">Ruim</label>
+ </fieldset>
+ 
+ <fieldset>
+  <label for="opiniao"> Escreva sua opinião</label>
+  <br>
+  <textarea
+    id="opiniao"
+    name="mensagem" 
+    placeholder="Digite sua opinião aqui..."></textarea>
+</fieldset>
+
+ 
+  <button type="submit">Enviar</button>
 </html>
