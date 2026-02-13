@@ -11,29 +11,68 @@
       <form action=" " method="get">
         <fieldset>
           <legend>Dados Pessoais</legend>
-          <label for="userName">Nome</label>
-          <input type="text" name="userName" required />
+          <label for="name">Nome</label>
+          <input id="name" type="text" name="userName" required />
           <br />
-          <label for="userage">Idade</label>
-          <input type="number" name="userage" min="12" max="100" required />
+          <label  for="age">Idade</label>
+          <input  id="age" type="number" name="userage" min="12" max="100" required />
           <br />
           <label for="birthDate">Data de Nascimento</label>
-          <input type="date" name="birthDate" />
+          <input id="birthDate" type="date" name="userBirthDate" />
           <br />
-          <label for="userEmail">Email</label>
-          <input type="email" name="userEmail" required />
+          <label for="email">Email</label>
+          <input id  ="email" type="email" name="userEmail" required />
           <br />
-          <label for="userPhoneNumber">Telefone</label>
-          <input
-            type="tel"
-            name="userPhoneNumber"
-            pattern="[0-9]{11}"
-            placeholder="DDD + número sem espaços sem hífen "
+          <label for="PhoneNumber">Telefone</label>
+          <input id = "PhoneNumber" type="tel"  name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços sem hífen "
           />
           <br />
-          <label for="userImage">Upload de foto</label>
-          <input type="file" accept="image/*" name="userImage" />
+          <label for="Image">Upload de foto</label>
+          <input id = "Image" type="file" accept="image/*" name="userImage" />
           <br />
+        </fieldset> 
+        <fieldset>
+          <legend>Perfil</legend>
+          <p>Gênero:</p>
+          <input id="fem" type="radio" name="userGender" value="Feminino" />
+          <label for="fem">Feminino </label>
+
+          <input id="masc" type="radio" name="userGender" value="Masculino" />
+          <label for="masc">Masculino </label>
+
+          <input id="notInformed" type="radio" name="userGender" value="notInformed" />
+          <label for="notInformed">Prefiro não informar </label>
+          <br />
+          <label for="state">Estado </label>
+          <select id="state" name="userState" required>
+            <option value="acre">Acre</option>
+            <option value="alagoas">Alagoas</option>
+            <option value="amapa">Amapá</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="bahia">Bahia</option>
+            <option value="ceara">Ceará</option>
+            <option value="distritoFederal">Distrito Federal</option>
+            <option value="espiritoSanto">Espírito Santo</option>
+            <option value="goias">Goiás</option>
+            <option value="maranhao">Maranhão</option>
+            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+            <option value="matoGrosso">Mato Grosso</option>
+            <option value="minasGerais">Minas Gerais</option>
+            <option value="para">Pára</option>
+            <option value="paraiba">Paraíba</option>
+            <option value="parana">Paraná</option>
+            <option value="pernambuco">Pernambuco</option>
+            <option value="piaui">Piauí</option>
+            <option value="rioDeJaneiro">Rio de Janeiro</option>
+            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+            <option value="rondonia">Rondônia</option>
+            <option value="roraima">Roraima</option>
+            <option value="santaCatarina">Santa Catarina</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="sergipe">Sergipe</option>
+            <option value="tocantins">Tocantins</option>
+          </select>
         </fieldset>
   <fieldset>
           <legend>Perfil</legend>
@@ -111,7 +150,31 @@
   <br>
   <label for="favoritcolor">Cor favorita:</label>
 <input type="color" name="userFavoriteColor" id="favoritColor"  >
+<<<<<<< HEAD
 </fieldset>  
+=======
+
+</fieldset>   
+        <fieldset>
+          <legend>Hábitos</legend>
+
+          <p>Redes sociais</p>
+          <input type="checkbox" name="social" value="Instagram" />
+          <label for="social">Instagram</label>
+          <br />
+          <input type="checkbox" name="social" value="Facebook" />
+          <label for="social">Facebook</label>
+          <br />
+          <input type="checkbox" name="social" value="Linkedin" />
+          <label for="social">Linkedin</label>
+          <br />
+          <input type="checkbox" name="social" value="X" />
+          <label for="social">X</label>
+        </fieldset>
+      </form>
+
+
+>>>>>>> 0cba5a854ecb1b30bf45fc1e406ba14504e664e6
     </section>
   </head>
   <body>
